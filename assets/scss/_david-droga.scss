@@ -1,73 +1,32 @@
-.latest-news-area{
-    .single-news{
-        background: #00235b;
-        .news-img{
-            position: relative;
+.david-droga-area{
+    .single-david{
+        .david-img{
             overflow: hidden;
             & img{
                 width: 100%;
-                @include transform(scale (1));
-                transition: all 0.5s ease-out 0s;
+                transform:scale(1);
                 @include transition(.7s);
                 }
-                // Date
-                .news-date{
-                    background:#ff5f13;
-                    padding:15px 34px;
-                    display: inline-block;
-                    position: absolute;
-                    top: 0;
-                    left:0;
-                    @media #{$md}{
-                        padding: 8px 20px;
-                    }
-                    @media #{$sm}{
-                        padding: 8px 20px;
-                    }
-                    @media #{$xs}{
-                        padding: 8px 20px;
-                    }
-                    span{
-                        color: #fff;
-                        font-size: 25px;
-                        font-weight: 600;
-                        line-height: 1;
-                        margin: 0;
-                        @media #{$md}{
-                            font-size: 22px;
-                        }
-                        @media #{$sm}{
-                            font-size: 22px;
-                        }
-                        @media #{$xs}{
-                            font-size: 22px;
-                        }
-                    }
-                    p{
-                        color: #fff;
-                        margin: 0;
-                    }
-                }
         }
-        .news-caption{
-            padding: 40px 57px 40px 60px;
+        .david-captoin{
+            padding: 40px 57px 0px 60px;
             @media #{$md}{
-                padding: 10px 10px 10px 10px;
+                padding: 10px 10px 0px 10px;
             }
             @media #{$sm}{
-                padding: 10px 10px 10px 10px;
+                padding: 10px 10px 0px 10px;
             }
             @media #{$xs}{
-                padding: 10px 10px 10px 10px;
+                padding: 10px 10px 0px 10px;
             }
             .david-info{
                 & li{
                     display: inline-block;
                     margin-right: 14px;
                     padding-right: 14px;
+                    border-right: 1px solid #222;
                     line-height: 1;
                     margin-bottom: 16px;
-                    color: #a4acc3;
                     @media #{$xs}{
                         margin-right: 1px;
                         padding-right: 5px;
@@ -81,8 +40,9 @@
                 }
             }
             & h2{
+
                 & a{
-                    color:#fff;
+                    color:#282828;
                     font-weight: 700;
                     font-size: 25px;
                     line-height: 1.5;
@@ -99,7 +59,7 @@
                 }
             }
             & a{
-                color: $theme_color;
+                color: #282828;
                 font-size: 16px;
                
                 &:hover{
@@ -107,7 +67,6 @@
                 }
                 &.d-btn{
                     position: relative;
-                    text-transform: uppercase;
                     &::before{
                         content: "";
                         position: absolute;
@@ -123,10 +82,12 @@
     }
 }
 
-.latest-news-area .single-news .news-caption a:hover::before{
+.david-droga-area .single-david .david-captoin a:hover::before{
     background:$theme_color;
 }
-
-.news-img:hover .news-img img{
+// .single-david:hover .david-img img{
+// 	transform:scale(1.1);
+// }
+.david-img:hover .david-img img{
 	transform:scale(1.1);
 }

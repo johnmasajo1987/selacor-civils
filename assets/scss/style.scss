@@ -28,37 +28,33 @@
 */
 
 // Defult
-	@import 'variables';
-	@import 'mixins';
-	@import 'overlay';
-	@import 'common';
-	@import 'color';
+@import 'variables';
+@import 'mixins';
+@import 'overlay';
+@import 'common';
+@import 'color';
 
 
 // Homepage1
-	@import 'headerMenu';
-	@import 'h1-hero';
-	@import 'services_section';
-	@import 'support-company';
-	@import 'countDown';
-	@import 'team';
-
-	@import 'david-droga';
-	@import 'project-area';
-	@import 'contact-with-area';
-
-	@import 'testimonial';
-	@import 'blog';
-	@import 'footer';
+@import 'headerMenu';
+@import 'h1-hero';
+@import 'team';
+@import 'we-trusted';
+@import 'services_section';
+@import 'completed-cases';
+@import 'testimonial';
+@import 'recent';
+@import 'requestBack';
+@import 'services-details';
+@import 'footer';
 
 // inner Page
-	@import 'services';
-	@import 'details_page';
+@import 'services';
 
 
 // Deful Element Page
-	@import 'blog_page';
-	@import 'contact';
-	@import 'bradcam';
-	@import 'extend';
-	@import 'elements';
+@import 'blog_page';
+@import 'contact';
+@import 'bradcam';
+@import 'extend';
+@import 'elements';

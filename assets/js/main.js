@@ -23,7 +23,6 @@
 
 
 /* 3. MainSlider-1 */
-    // h1-hero-active
     function mainSlider() {
       var BasicSlider = $('.slider-active');
       BasicSlider.on('init', function (e, slick) {
@@ -36,12 +35,12 @@
       });
       BasicSlider.slick({
         autoplay: false,
-        autoplaySpeed: 4000,
+        autoplaySpeed: 10000,
         dots: false,
         fade: true,
-        arrows: false, 
-        prevArrow: '<button type="button" class="slick-prev"><img src="img/hero_thumb/arrow-left.png" alt=""><img class="secondary-img" src="img/hero_thumb/left-white.png" alt=""></button>',
-        nextArrow: '<button type="button" class="slick-next"><img src="img/hero_thumb/arrow-right.png" alt=""><img class="secondary-img" src="img/hero_thumb/right-white.png" alt=""></button>',
+        arrows: true,
+        prevArrow: '<button type="button" class="slick-prev"><i class="ti-shift-left"></i></button>',
+        nextArrow: '<button type="button" class="slick-next"><i class="ti-shift-right"></i></button>',
         responsive: [{
             breakpoint: 1024,
             settings: {
@@ -87,6 +86,8 @@
     }
     mainSlider();
 
+
+
 /* 4. Testimonial Active*/
   var testimonial = $('.h1-testimonial-active');
     if(testimonial.length){
@@ -95,6 +96,7 @@
         infinite: true,
         speed: 1000,
         autoplay:false,
+        loop:true,
         arrows: true,
         prevArrow: '<button type="button" class="slick-prev"><i class="ti-angle-left"></i></button>',
         nextArrow: '<button type="button" class="slick-next"><i class="ti-angle-right"></i></button>',
@@ -133,10 +135,10 @@
 
 
 /* 5. Gallery Active */
-    var client_list = $('.gallery-active');
+    var client_list = $('.completed-active');
     if(client_list.length){
       client_list.owlCarousel({
-        slidesToShow: 3,
+        slidesToShow: 2,
         slidesToScroll: 1,
         loop: true,
         autoplay:true,
@@ -144,17 +146,21 @@
         smartSpeed:2000,
         nav: false,
         dots: false,
-        margin: 0,
+        margin: 15,
 
         autoplayHoverPause: true,
         responsive : {
           0 : {
-            nav: false,
-            items: 2,
+            items: 1
           },
           768 : {
-            nav: false,
-            items: 3,
+            items: 2
+          },
+          992 : {
+            items: 2
+          },
+          1200:{
+            items: 3
           }
         }
       });
@@ -210,22 +216,13 @@
 /* 10. WOW active */
     new WOW().init();
 
-
-
-/* 13. counterUp*/
-  $('.counter').counterUp({
-    delay: 10,
-    time: 3000
-  });
-
-
+/* 11. Datepicker */
     
 // 11. ---- Mailchimp js --------//  
     function mailChimp() {
       $('#mc_embed_signup').find('form').ajaxChimp();
     }
     mailChimp();
-
 
 
 // 12 Pop Up Img
